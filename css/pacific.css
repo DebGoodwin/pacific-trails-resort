@@ -1,0 +1,141 @@
+
+/*Configure a universal selector with a box-sizing: border-box*/
+* { box-sizing: border-box; }
+
+/*Prevent rendering issues in older browser versions*/
+header, nav, main, footer { display: block; } 
+
+/* Styles for the body elements */
+body    { background-color: #FFFFFF;                         
+          background-image: url(../images/background.jpg);    /*Configure the background image*/
+          color: #666666;
+          font-family: Arial, Verdana, sans-serif; }
+
+/* Styles for the wrapper id*/ 
+#wrapper { background-color: #90C7E3;                      /*Configure background color*/
+           width: 80%;        
+           min-width: 700px; max-width: 1024px;              /*Set a min and max width*/
+           box-shadow: 5px 5px 5px #828282;                /*Create a drop shadow effect*/
+           margin-left: auto;
+           margin-right: auto; }
+
+/* Styles for the header elements */
+header  { background-color: #000033;
+          color: #FFFFFF;
+          font-family: Georgia, serif; }
+
+h1      { line-height: 200%;
+          background-image: url(../images/sunset.jpg);
+          background-position: right;
+          background-repeat: no-repeat; 
+          padding-left: 20px;
+          height: 72px;
+          margin-bottom: 0;}                                 /*Remove empty space between header area and navigation*/
+
+h2      { color: #3399CC;
+          font-family: Georgia, serif; }
+
+h3      { color: #000033; }                                /*Add text color to level 3 headings*/
+
+/* Styles for the navigation elements */
+nav     { font-weight: bold;
+          float: left;                                        /*Configure the left column nav area*/
+          width: 160px;
+          padding: 20px 5px 0px 20px; }                       /*Add padding around nav elements*/
+
+nav ul  { list-style-type: none; margin: 0; padding-left: 0; } /*Create nav list without list markers*/
+nav a   { text-decoration: none;}                              /*Prevent the hyperlinks from displaying default underline*/
+
+/*Configure the pseudo-classes for the navigation hyperlinks*/
+nav a:link    { color: #000033; }
+nav a:visited { color: #344873; }
+nav a:hover   { color: #FFFFFF; }
+
+
+/* Styles for the main elements */
+main    { background-color: #FFFFFF;
+          margin-left: 170px;
+          padding: 1px 20px 1px 20px; }
+
+/* Styles for the footer elements */
+footer  { font-size: .70em;
+          font-style: italic;
+          text-align: center;
+          padding: 10px;                                     /*Add padding around footer*/
+          background-color: #FFFFFF;
+          margin-left: 170px;}                               /*Set margin for two-column page*/
+
+/* Styles for the list elements */
+dt      { color: #000033;
+          font-weight: bold; }
+
+/* Styles for the resort class*/
+.resort { color: #000033;
+          font-size: 1.2em; }       
+
+/* Styles for the page images located just below the navigation menu*/
+#homehero { height: 300px;                                   /*Sets the height of the element*/
+            background-image: url(../images/coast.jpg);      /*Configure the background image on main webpage*/
+            background-size: 100% 100%;                      /*Set the size to cover the area of the div element*/
+            background-repeat: no-repeat;                    /*Set the image to not repeat*/
+            margin-left: 170px; }                            /*Set margin for two-column page*/
+
+#yurthero { height: 300px;
+            background-image: url(../images/yurt.jpg);       /*Configure the background image on yurt webpage*/
+            background-size: 100% 100%; 
+            background-repeat: no-repeat; 
+            margin-left: 170px; }
+
+#trailhero { height: 300px;
+             background-image: url(../images/trail.jpg);     /*Configure the background image on activities webpage*/
+             background-size: 100% 100%; 
+             background-repeat: no-repeat; 
+             margin-left: 170px; }
+
+#reservehero { height: 300px;
+               background-image: url(../images/reserved.jpg); /*Configure the background image on reservations webpage*/
+               background-size: 100% 100%; 
+               background-repeat: no-repeat; 
+               margin-left: 170px; }
+
+/*Styles for the Image Gallery*/
+#gallery ul { list-style-type: none; }
+#gallery li { display: inline-block;
+              width: 225px;
+              padding-bottom: 10px;
+              margin: 10px;
+              background-color: #EAEAEA;
+              text-align: center;
+              font-style: italic;
+              font-family: Georgia, serif;}
+
+/*Styles for the table on the Yurts page*/
+table       { margin :auto;                                  /*center the table*/
+              border: 1px solid #3399cc;                   /*create a table border*/
+              width: 90%;                                    /*display a 90% width*/
+              border-collapse: collapse;}                    /*remove extra space between table and cell borders*/
+
+td, th      { padding: 5px;                                  /*create padding between content of table cell and its border*/
+              border: 1px solid #3399cc;}                  /*create border for each row*/
+
+td          { text-align: center;}                           /*center align text in table cells*/
+
+.text       { text-align: left;}                             /*left align text in Description column*/
+
+tr:nth-of-type(even) { background-color: #F5FAFC; }        /*Configure even table rows to have a light blue background color*/
+
+/*Styles for the form on the Reservations page*/
+label       { float: left;                                   /*float the labels to the left*/
+              display: block;                                /*display labels as block elements*/
+              width: 8em;                                    /*set the label width*/
+              padding-right: 1em;}                           /*configure right padding*/
+
+input, textarea { display: block;                            /*display input and textareas as block elements*/
+                  margin-bottom: 1em;}                       /*create a bottom margin*/
+
+#mySubmit      { margin-left: 10em; }                        /*create a margin for the submit button*/
+
+/*Styles for the video element*/
+video, embed   { float: right;                               /*float the video to the right*/
+                 margin: 2em; }                              /*create a margin around the video*/
+

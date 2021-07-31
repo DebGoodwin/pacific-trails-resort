@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pacific Trails Resort :: Reservations</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/pacific.css">
+
+<!--This is to assist Internet Explorer 8 and earlier versions-->
+<!--[if lt IE 9]                                   .
+<script src= "http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!--Function to validate email address has not been left blank.-->
+<script>
+function validateForm() {
+if (document.forms[0].myEmail.value=="") {
+    alert("Please enter an email address.");
+    return false;
+} // end if
+return true;
+} // end function validateForm
+</script>
+</head>
+<body>
+<!-- This section is for wrapper element-->
+<div id="wrapper">
+        
+    <!--JavaScript has been added to verify the email field has not been left blank. We could also use JavaScript to 
+        validate that the additional form fields have not been left blank, as well as verifying that the number of nights 
+        entered is greater than 0. It could also be helpful to the user to add an alert message letting them know that 
+        their information has been received. -->
+           
+        
+    <!-- This section is for the heading elements-->
+    <header>
+        <h1>Pacific Trails Resort</h1>
+    </header>
+    <!--The end of the heading elements-->
+
+    <!-- This section is for the navigation elements-->
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+    </nav>
+    <!--The end of the navigation elements-->
+
+    <!--This element is to display an image to be configured in the css file-->
+    <div id="reservehero">  
+    </div>
+    <!--The end of the div element-->
+
+    <!-- This section is for the main elements-->
+    <main>
+        <h2>Reservations at Pacific Trails</h2>
+        <h3>Contact Us</h3>
+        <p>Required information is marked with an *</p>
+        <!--Create a form and call the postscript to capture the user data-->
+        <form method="post" onsubmit="return validateForm();"
+        action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx">
+            <!--create an input field for first name-->
+            <label for="myFName">First Name: </label>
+            <input type="text" name="myFName" id="myFName">
+            
+            <!--create an input field for last name-->
+            <label for="myLName">Last Name: </label>
+            <input type="text" name="myLName" id="myLName">
+            
+            <!--create an input field requiring email address, this type will validate email on browsers suppporting HTML5-->
+            <label for="myEmail">* E-mail: </label>
+            <input type="email" name="myEmail" id="myEmail">
+            
+            <!--create an optional telephone number input field-->
+            <label for="myPhone">Phone: </label>
+            <input type="tel" name="myPhone" id="myPhone">
+
+            <!--create an optional arrival date input field as a calendar form control -->
+            <label for="myDate">Arrival Date: </label>
+            <input type="date" name="myDate" id="myDate">
+
+            <!--create an optional input field to enter the number of nights as a spinner-->
+            <label for="myNumber">Nights: </label>
+            <input type="number" name="myNumber" id="myNumber" min="1" max="14">
+
+            <!--create a comments input field-->
+            <label for="myComments">Comments: </label>
+            <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+
+            <!--create a submit button-->
+            <input id="mySubmit" type="submit" value="Submit">
+        </form>
+        
+    </main>
+    <!--The end of the main elements-->
+
+    <!-- This section is for the footer elements-->
+    <footer>
+        Copyright &copy; 2016 Pacific Trails Resort<br>
+            <a href="mailto:debra@goodwin.com">debra@goodwin.com</a><br><br>
+            <a href="https://validator.w3.org/unicorn/check?ucn_uri=classweb.riosalado.edu%2FDEB2054542%2FCIS233DA_28721%2Flesson12%2Freservations.html&ucn_task=conformance#">
+                <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" 
+                alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics"></a>
+    </footer>
+    <!--The end of the footer elements-->
+</div>
+<!--The end of the wrapper element-->
+</body>
+</html>
